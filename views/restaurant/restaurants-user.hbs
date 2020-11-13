@@ -1,0 +1,19 @@
+<h1>Your restaurants:</h1>
+<hr>
+<div class="row">
+  {{#each restaurants}}
+  <div class="col-sm-12 col-md-6">
+    <div class="card">
+      <img src="{{logo}}" class="card-img-top" alt="{{name}}">
+      <div class="card-body">
+        <h5 class="card-title">{{name}}</h5>
+        <p class="card-text">{{slogan}}</p>
+        <small>{{horarioAp}} - {{horarioCi}}</small>
+        <br>
+        <br>
+        <a href="#" class="btn btn-primary btn-block">Details</a>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>

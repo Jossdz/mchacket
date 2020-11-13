@@ -1,0 +1,40 @@
+<form action="/restaurant/{{_id}}/new-item" method="post" enctype="multipart/form-data">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="form-groun">
+
+        <label for="name">Name:
+          <input class="form-control" type="text" id="name" name="name">
+        </label>
+      </div>
+      <div class="form-groun">
+
+        <label for="description">Description:
+          <input class="form-control" type="text" id="description" name="description">
+        </label>
+      </div>
+      <div class="form-groun">
+
+        <div class="custom-file">
+
+          <input class="form-control custom-file-input" type="file" id="image" name="image">
+          <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+        </div>
+      </div>
+      <div class="form-groun">
+
+        <label for="price">Price:
+          <input class="form-control" type="number" id="price" name="price">
+        </label>
+      </div>
+      <div class="form-groun">
+
+        <label for="time">Time:
+          <input class="form-control" type="text" id="time" name="time">
+        </label>
+      </div>
+      <button class="btn btn-success btn-block">Create</button>
+    </div>
+  </div>
+
+</form>

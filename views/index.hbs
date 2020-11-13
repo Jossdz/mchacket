@@ -1,0 +1,26 @@
+<h1>Restaurants</h1>
+<hr>
+<div class="row">
+  {{#each restaurants}}
+  <div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="card mb-3" style="min-height: 150px;">
+      <div class="row no-gutters" style="height: inherit;">
+        <div class="col-md-4" style="height: inherit;">
+          <img style="width: 100%; height:100%; object-fit:cover;" src="{{logo}}" class="card-img img-fluid"
+            alt="{{name}}">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{name}}</h5>
+            <p class="card-text">{{slogan}}</p>
+            <p class="card-text"><small class="text-muted">{{horarioAp}} - {{horarioCi}}</small></p>
+            <a href="/restaurant/{{_id}}">
+              <button class="btn btn-info btn-block">Details</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
