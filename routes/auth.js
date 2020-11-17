@@ -11,6 +11,7 @@ const {
   profilePicture,
   logout
 } = require("../controllers/authControllers")
+const { itemDetails } = require('../controllers/itemControllers')
 const uploadPicture = require("../config/ cloudinary")
 
 const router = Router()
@@ -24,4 +25,6 @@ router.post("/login", loginProcess)
 router.get("/profile", profileView)
 router.get("/logout", logout)
 router.post("/profile-picture", uploadPicture.single("image"), profilePicture)
+//===========ITEMS==========
+router.get('/item/:itemId', itemDetails)
 module.exports = router

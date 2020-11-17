@@ -1,0 +1,10 @@
+<h1>{{name}}</h1>
+<img width="200" height="200" src="{{image}}" alt="{{name}}">
+<p>{{description}}</p>
+<small>{{formatedPrice}}</small>
+{{!-- tendremos que encerrar nuestro script dentro de un form con el action hacia la ruta a donde vamos a redirigir a nuestro usuario despues del pago. --}}
+<form method="POST" action="/item/bought">
+  <script src="https://www.mercadopago.com.mx/integrations/v1/web-payment-checkout.js"
+    data-preference-id='{{prefenceId}}' data-button-label="Pay">
+    </script>
+</form>
